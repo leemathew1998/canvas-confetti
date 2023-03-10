@@ -608,7 +608,7 @@
     var modes = {
       cannon: function cannon() {
         confetti({
-          particleCount: 100,
+          particleCount: 1000,
           spread: 70,
           origin: { y: 0.6 }
         });
@@ -830,6 +830,7 @@
           ev.preventDefault();
 
           try {
+            console.log(editor)
             eval(editor.getValue());
           } catch (e) {
             console.error(e);
